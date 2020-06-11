@@ -37,12 +37,12 @@ Before starting your workstation will need the following:
 
 1. Clone the repository
 
-`git@github.com:wpengine/woospeed-by-wp-engine.git`
+`git clone https://gitea.chriswiegman.com/chriswiegman/wordpress-plugin-starter.git`
 
 2. Start Lando
 
 ```bash
-cd woospeed-by-wp-engine
+cd wordpress-plugin-starter
 make start
 ```
 

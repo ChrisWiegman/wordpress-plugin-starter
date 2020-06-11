@@ -42,7 +42,7 @@ function perform_uninstall() {
 		exit_uninstaller();
 	}
 
-	// Uninstall WooSpeed by WP Engine.
+	// Uninstall WordPress Plugin Starter.
 	clean_data();
 }
 
