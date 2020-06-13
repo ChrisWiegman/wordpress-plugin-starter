@@ -68,7 +68,7 @@ ifdef HAS_LANDO
 	if [ ! -d ./wordpress/ ]; then \
 		$(MAKE) install; \
 	fi
-	if [ ! "$$(docker ps | grep woospeed_appserver)" ]; then \
+	if [ ! "$$(docker ps | grep wordpresspluginstarter_appserver)" ]; then \
 		echo "Starting Lando"; \
 		lando start; \
 	fi
@@ -81,7 +81,7 @@ endif
 .PHONY: lando-stop
 lando-stop:
 ifdef HAS_LANDO
-	if [ "$$(docker ps | grep woospeed_appserver)" ]; then \
+	if [ "$$(docker ps | grep wordpresspluginstarter_appserver)" ]; then \
 		echo "Stopping Lando"; \
 		lando stop; \
 	fi
